@@ -1,8 +1,3 @@
-defmodule Count do
-  @enforce_keys [:id, :value]
-  defstruct [:id, :value]
-end
-
 defmodule AdventOfCode.Day02 do
   def parse_color(r, s) do
     case Regex.run(r, s) do
